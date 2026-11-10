@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="side" aria-hidden="true">
+      <h2>Wapas aayiye.</h2>
+      <p>Apne account mein login karein aur wahin se shuru karein jahan chhoda tha.</p>
+    </section>
+
+    <section class="panel">
+      <form id="loginForm" novalidate>
+        <h1>Login</h1>
+        <p class="sub">Apna email aur password enter karein.</p>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="username" placeholder="aap@example.com">
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="pw-wrap">
+            <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Kam az kam 6 characters">
+            <button type="button" id="togglePw" class="ghost" aria-label="Password dikhayein">Dikhayein</button>
+          </div>
+          <small class="error" id="passwordError"></small>
+        </div>
+
+        <div class="row">
+          <label class="check">
+            <input type="checkbox" id="remember"> Mujhe yaad rakhein
+          </label>
+          <a href="#" id="forgot">Password bhool gaye?</a>
+        </div>
+
+        <p class="form-msg" id="formMsg" role="alert"></p>
+
+        <button type="submit" class="primary" id="submitBtn">Login karein</button>
+
+        <p class="foot">Account nahi hai? <a href="#">Sign up karein</a></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

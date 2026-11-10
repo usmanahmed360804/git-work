@@ -8,6 +8,8 @@ const rememberBox = document.getElementById("remember");
 const togglePw = document.getElementById("togglePw");
 const formMsg = document.getElementById("formMsg");
 const submitBtn = document.getElementById("submitBtn");
+   
+
 
 // Pichla email yaad rakhna (sirf email, password kabhi save nahi hota)
 try {
